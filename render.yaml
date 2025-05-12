@@ -9,7 +9,7 @@ services:
     startCommand: gunicorn goodlifeclub.wsgi:application
     envVars:
       - key: DJANGO_SETTINGS_MODULE
-        value: goodlifeclub.settings
+        value: goodlife.settings
       - key: SECRET_KEY
         value: your-production-secret-key
       - key: DEBUG
