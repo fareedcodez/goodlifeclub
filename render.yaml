@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: goodlifeclub
+    name: goodlife
     env: python
     buildCommand: |
       pip install -r requirements.txt
