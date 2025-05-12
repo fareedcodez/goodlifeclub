@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="500" viewBox="0 0 1920 500">
+  <!-- Dark background -->
+  <rect width="1920" height="500" fill="#111111"/>
+  
+  <!-- Green gradient overlay -->
+  <rect width="1920" height="500" fill="url(#headerGradient)" opacity="0.4"/>
+  
+  <!-- Subtle grid pattern -->
+  <pattern id="gridPattern" patternUnits="userSpaceOnUse" width="20" height="20">
+    <rect width="20" height="20" fill="none" stroke="#09B44D" stroke-width="0.5" opacity="0.05"/>
+  </pattern>
+  <rect width="1920" height="500" fill="url(#gridPattern)"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09B44D" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Abstract elements -->
+  <circle cx="100" cy="250" r="300" fill="#09B44D" opacity="0.05"/>
+  <circle cx="1800" cy="100" r="200" fill="#09B44D" opacity="0.05"/>
+  
+  <!-- Dark overlay for text readability -->
+  <rect width="1920" height="500" fill="#000000" opacity="0.2"/>
+</svg>
