@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1 data-aos="fade-up">RESURRECT YOUR DREAMS</h1>
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">Turn your aspirations into reality with Good Life Club</p>
+        <div class="hero-btns" data-aos="fade-up" data-aos-delay="400">
+            <a href="{% url 'services' %}" class="btn-primary">Our Services</a>
+            <a href="{% url 'contact' %}" class="btn-secondary">Contact Us</a>
+        </div>
+    </div>
+    <div class="hero-overlay"></div>
+</section>
+
+<!-- About Preview Section -->
+<section class="about-preview">
+    <div class="container">
+        <div class="about-preview-content">
+            <div class="about-text" data-aos="fade-right">
+                <h2>WELCOME TO GOOD LIFE CLUB</h2>
+                <p class="tagline">We resurrect dreams into reality</p>
+                <p>At Good Life Club, we believe that everyone deserves to live their dreams. Our mission is to empower individuals and businesses to transform their aspirations into tangible success through expert guidance, innovative solutions, and unwavering support.</p>
+                <p>With our philosophy of <strong>THINK WRITE ACTION</strong>, we help you conceptualize your goals, develop a strategic plan, and take decisive steps toward achievement.</p>
+                <a href="{% url 'about' %}" class="btn-outline">Learn More About Us</a>
+            </div>
+            <div class="about-image" data-aos="fade-left">
+                <div class="image-container">
+                    <div class="circle-bg"></div>
+                    <img src="{% static 'images/about.jpg' %}" alt="Good Life Club Team" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Preview Section -->
+<section class="services-preview">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>OUR SERVICES</h2>
+            <p>Comprehensive solutions to resurrect your dreams</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Sales & Marketing</h3>
+                <p>Expert strategies to boost your business growth and market presence.</p>
+                <a href="{% url 'services' %}#sales" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Leadership Training</h3>
+                <p>Develop essential leadership skills to inspire and guide your team to success.</p>
+                <a href="{% url 'services' %}#leadership" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Techpreneurship</h3>
+                <p>Navigate the digital landscape with crypto, websites, and tech solutions.</p>
+                <a href="{% url 'services' %}#tech" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <h3>Management & Planning</h3>
+                <p>Strategic planning and management solutions for organizational excellence.</p>
+                <a href="{% url 'services' %}#management" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        
+        <div class="services-cta" data-aos="fade-up">
+            <a href="{% url 'services' %}" class="btn-primary">View All Services</a>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content" data-aos="zoom-in">
+            <h2>READY TO RESURRECT YOUR DREAMS?</h2>
+            <p>Let's transform your vision into reality. Contact us today to get started on your journey to success.</p>
+            <a href="{% url 'contact' %}" class="btn-primary">Get Started Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>SUCCESS STORIES</h2>
+            <p>See how we've helped others resurrect their dreams</p>
+        </div>
+        
+        <div class="testimonial-slider" data-aos="fade-up">
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"Good Life Club transformed my business vision into reality. Their expert guidance in sales and marketing strategies helped me increase revenue by 150% in just one year."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-controls">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Philosophy Section -->
+<section class="philosophy">
+    <div class="container">
+        <div class="philosophy-content">
+            <div class="philosophy-text" data-aos="fade-right">
+                <h2>OUR PHILOSOPHY</h2>
+                <h3>THINK WRITE ACTION</h3>
+                <p>Our three-step approach to success:</p>
+                <div class="philosophy-steps">
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h4>THINK</h4>
+                            <p>Conceptualize your goals and develop a clear vision of what you want to achieve.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h4>WRITE</h4>
+                            <p>Document your vision and create a strategic plan with actionable steps.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h4>ACTION</h4>
+                            <p>Execute your plan with determination, adapting as needed to achieve success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="philosophy-image" data-aos="fade-left">
+                <img src="{% static 'images/philosophy.jpg' %}" alt="Think Write Action Philosophy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="newsletter">
+    <div class="container">
+        <div class="newsletter-content" data-aos="fade-up">
+            <h2>JOIN OUR COMMUNITY</h2>
+            <p>Subscribe to receive insights, tips, and updates to help you on your journey.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

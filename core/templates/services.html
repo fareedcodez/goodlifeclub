@@ -1,0 +1,321 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <div class="page-header-content">
+            <h1 data-aos="fade-up">OUR SERVICES</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Comprehensive solutions to resurrect your dreams</p>
+        </div>
+    </div>
+</section>
+
+<!-- Services Introduction -->
+<section class="services-intro">
+    <div class="container">
+        <div class="services-intro-content" data-aos="fade-up">
+            <p>At Good Life Club, we offer a diverse range of services designed to empower individuals and businesses to achieve their goals. Each service is tailored to address specific needs while aligning with our mission of resurrecting dreams into reality.</p>
+            <div class="services-overview">
+                <div class="overview-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="item-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="item-text">Personalized Solutions</div>
+                </div>
+                <div class="overview-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="item-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="item-text">Expert Guidance</div>
+                </div>
+                <div class="overview-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="item-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="item-text">Proven Results</div>
+                </div>
+                <div class="overview-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="item-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="item-text">Continuous Support</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Detailed -->
+<section class="services-detailed">
+    <div class="container">
+        <!-- Sales & Marketing -->
+        <div id="sales" class="service-block">
+            <div class="service-content">
+                <div class="service-info" data-aos="fade-right">
+                    <div class="service-header">
+                        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                        <h2>Sales & Marketing Expertise</h2>
+                    </div>
+                    <p>Our comprehensive sales and marketing solutions are designed to boost your business growth, enhance market presence, and drive revenue. We employ data-driven strategies to help you reach your target audience effectively and convert prospects into loyal customers.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
+                            <div class="feature-text">
+                                <h4>Strategic Marketing Planning</h4>
+                                <p>Develop comprehensive marketing strategies tailored to your business goals.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-users"></i></div>
+                            <div class="feature-text">
+                                <h4>Sales Process Optimization</h4>
+                                <p>Streamline your sales funnel to improve conversion rates and customer acquisition.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-megaphone"></i></div>
+                            <div class="feature-text">
+                                <h4>Brand Development</h4>
+                                <p>Create a compelling brand identity that resonates with your target audience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-cta">
+                        <a href="{% url 'contact' %}" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="service-image" data-aos="fade-left">
+                    <img src="{% static 'images/sales-marketing.jpg' %}" alt="Sales and Marketing">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Leadership Training -->
+        <div id="leadership" class="service-block reverse">
+            <div class="service-content">
+                <div class="service-info" data-aos="fade-left">
+                    <div class="service-header">
+                        <div class="service-icon"><i class="fas fa-users"></i></div>
+                        <h2>Leadership Training</h2>
+                    </div>
+                    <p>Develop essential leadership skills to inspire and guide your team to success. Our leadership training programs are designed to cultivate the qualities needed to lead effectively in today's dynamic business environment, fostering innovation, collaboration, and results-oriented performance.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                            <div class="feature-text">
+                                <h4>Strategic Leadership Development</h4>
+                                <p>Enhance your strategic thinking and decision-making capabilities.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-comments"></i></div>
+                            <div class="feature-text">
+                                <h4>Communication Skills</h4>
+                                <p>Master effective communication to inspire and motivate your team.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-puzzle-piece"></i></div>
+                            <div class="feature-text">
+                                <h4>Team Building & Management</h4>
+                                <p>Learn techniques to build cohesive, high-performing teams.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-cta">
+                        <a href="{% url 'contact' %}" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="service-image" data-aos="fade-right">
+                    <img src="{% static 'images/leadership.jpg' %}" alt="Leadership Training">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Techpreneurship -->
+        <div id="tech" class="service-block">
+            <div class="service-content">
+                <div class="service-info" data-aos="fade-right">
+                    <div class="service-header">
+                        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h2>Techpreneurship</h2>
+                    </div>
+                    <p>Navigate the digital landscape with our expert guidance in cryptocurrency, website development, tech solutions, and digital transformation. We help entrepreneurs leverage technology to innovate, solve problems, and create sustainable digital businesses.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-coins"></i></div>
+                            <div class="feature-text">
+                                <h4>Cryptocurrency Consulting</h4>
+                                <p>Strategic advice on blockchain implementation and cryptocurrency investments.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-globe"></i></div>
+                            <div class="feature-text">
+                                <h4>Website Development</h4>
+                                <p>Custom website solutions to establish a strong online presence.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-cogs"></i></div>
+                            <div class="feature-text">
+                                <h4>Digital Transformation</h4>
+                                <p>Comprehensive strategies to digitize your business processes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-cta">
+                        <a href="{% url 'contact' %}" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="service-image" data-aos="fade-left">
+                    <img src="{% static 'images/techpreneur.jpg' %}" alt="Techpreneurship">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Management & Planning -->
+        <div id="management" class="service-block reverse">
+            <div class="service-content">
+                <div class="service-info" data-aos="fade-left">
+                    <div class="service-header">
+                        <div class="service-icon"><i class="fas fa-tasks"></i></div>
+                        <h2>Management & Planning</h2>
+                    </div>
+                    <p>Our strategic planning and management solutions are designed to optimize organizational performance, streamline operations, and achieve sustainable growth. We work closely with you to develop tailored strategies that align with your vision and objectives.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-chart-pie"></i></div>
+                            <div class="feature-text">
+                                <h4>Strategic Business Planning</h4>
+                                <p>Develop comprehensive business plans with clear objectives and implementation strategies.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-sitemap"></i></div>
+                            <div class="feature-text">
+                                <h4>Organizational Development</h4>
+                                <p>Improve organizational structure, culture, and processes to enhance efficiency.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-arrows-alt"></i></div>
+                            <div class="feature-text">
+                                <h4>Change Management</h4>
+                                <p>Navigate organizational changes effectively to minimize disruption and maximize results.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-cta">
+                        <a href="{% url 'contact' %}" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="service-image" data-aos="fade-right">
+                    <img src="{% static 'images/management.jpg' %}" alt="Management and Planning">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Phone Loans & Accessories -->
+        <div id="phone" class="service-block">
+            <div class="service-content">
+                <div class="service-info" data-aos="fade-right">
+                    <div class="service-header">
+                        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h2>Phone Loans & Accessories</h2>
+                    </div>
+                    <p>We provide flexible financing options for smartphones and a wide range of quality accessories to enhance your digital experience. Our solutions are designed to ensure you have access to the latest technology without financial strain.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-credit-card"></i></div>
+                            <div class="feature-text">
+                                <h4>Flexible Phone Financing</h4>
+                                <p>Easy payment plans to make smartphone ownership accessible to everyone.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-headphones"></i></div>
+                            <div class="feature-text">
+                                <h4>Quality Accessories</h4>
+                                <p>Premium phone accessories to enhance functionality and protection.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-tools"></i></div>
+                            <div class="feature-text">
+                                <h4>Repair Services</h4>
+                                <p>Professional repair solutions to extend the life of your devices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-cta">
+                        <a href="{% url 'contact' %}" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="service-image" data-aos="fade-left">
+                    <img src="{% static 'images/phone.jpg' %}" alt="Phone Loans and Accessories">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Network Marketing -->
+        <div id="network" class="service-block reverse">
+            <div class="service-content">
+                <div class="service-info" data-aos="fade-left">
+                    <div class="service-header">
+                        <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+                        <h2>Network Marketing Partnership</h2>
+                    </div>
+                    <p>Join our network marketing initiatives to expand your reach, build meaningful connections, and generate additional income streams. We provide the tools, training, and support needed to succeed in the dynamic world of network marketing.</p>
+                    
+                    <div class="service-features">
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+                            <div class="feature-text">
+                                <h4>Partnership Opportunities</h4>
+                                <p>Join our network of entrepreneurs and access exclusive partnership benefits.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="feature-text">
+                                <h4>Comprehensive Training</h4>
+                                <p>Learn proven network marketing strategies to build a successful business.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+                            <div class="feature-text">
+                                <h4>Performance Tracking</h4>
+                                <p>Access tools to monitor your progress and optimize your results.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-cta">
+                        <a href="{% url 'contact' %}" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="service-image" data-aos="fade-right">
+                    <img src="{% static 'images/network.jpg' %}" alt="Network Marketing">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content" data-aos="zoom-in">
+            <h2>READY TO RESURRECT YOUR DREAMS?</h2>
+            <p>Contact us today to discuss how our services can help you transform your vision into reality.</p>
+            <a href="{% url 'contact' %}" class="btn-primary">Get in Touch</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

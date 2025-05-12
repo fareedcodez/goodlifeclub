@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <!-- Dark background -->
+  <rect width="1920" height="1080" fill="#1a1a1a"/>
+  
+  <!-- Green gradient overlay -->
+  <rect width="1920" height="1080" fill="url(#greenGradient)" opacity="0.3"/>
+  
+  <!-- Diagonal stripes pattern -->
+  <pattern id="diagonalPattern" patternUnits="userSpaceOnUse" width="60" height="60" patternTransform="rotate(45)">
+    <rect width="20" height="60" fill="#09B44D" opacity="0.05"/>
+  </pattern>
+  <rect width="1920" height="1080" fill="url(#diagonalPattern)"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09B44D" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Subtle abstract elements -->
+  <circle cx="300" cy="200" r="400" fill="#09B44D" opacity="0.05"/>
+  <circle cx="1600" cy="900" r="300" fill="#09B44D" opacity="0.05"/>
+  
+  <!-- Dark overlay to ensure text readability -->
+  <rect width="1920" height="1080" fill="#000000" opacity="0.3"/>
+</svg>
