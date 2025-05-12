@@ -282,7 +282,7 @@ ul {
 ---------------------------------------------------*/
 .hero {
     height: 100vh;
-    min-height: 600px;
+    min-height: 200px;
     background: url('../images/hero-bg.jpg') no-repeat center center/cover;
     position: relative;
     display: flex;
