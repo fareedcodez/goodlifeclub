@@ -6,7 +6,7 @@ services:
       pip install -r requirements.txt
       python manage.py collectstatic --no-input
       python manage.py migrate
-    startCommand: gunicorn goodlifeclub.wsgi:application
+    startCommand: gunicorn goodlife.wsgi:application
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: goodlife.settings
